@@ -121,6 +121,13 @@ p {
   font-weight: bold;
   text-shadow: 0 0 3px #00ff00;
 }
+
+.cert-list strong {
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 0 0 2px #fefffe;
+}
+
 /*
 .main-margin {
   margin-right: 15rem;
@@ -136,26 +143,6 @@ p {
 
 .container2 {
   text-align: justify;
-}
-
-.container3 {
-  /*
-  background-color: #000;
-  color: #00ff00;
-  font-family: monospace;
-  padding: 1rem;
-  border: 1px solid #00ff00;
-  box-shadow: 0 0 10px #00ff00;
-  text-align: justify;
-  white-space: pre-wrap;
-  line-height: 1.6;*/
-
-  margin-right: 15rem;
-  margin-left: 15rem;
-  text-align: justify;
-  padding: 1rem;
-  border: 1px solid #00ff00;
-  box-shadow: 0 0 10px #00ff00;
 }
 
 /* Tags */
