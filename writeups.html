@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Writeups | r3dsec</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>&gt;_r3dsec</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writeups.html">Writeups</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>~/writeups</h2>
+
+    <!-- Search and Filters -->
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search writeups..." />
+
+      <select id="platform">
+        <option value="">All Platforms</option>
+        <option value="TryHackMe">TryHackMe</option>
+        <option value="HackTheBox">HackTheBox</option>
+        <option value="GitBook">GitBook</option>
+      </select>
+
+      <select id="difficulty">
+        <option value="">All Difficulties</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+
+      <select id="os">
+        <option value="">All OS</option>
+        <option value="Linux">Linux</option>
+        <option value="Windows">Windows</option>
+        <option value="Web">Web</option>
+      </select>
+    </div>
+
+    <!-- Writeups Grid -->
+    <div class="projects-grid" id="writeup-list">
+      <!-- Example Writeup -->
+      <div class="card" data-platform="TryHackMe" data-difficulty="Easy" data-os="Linux">
+        <h3>🧠 TryHackMe: Investigating Internal</h3>
+        <p>Coming soon...</p>
+        <p><strong>Platform:</strong> TryHackMe</p>
+        <p><strong>Difficulty:</strong> Easy</p>
+        <p><strong>OS:</strong> Linux</p>
+        <a href="#" target="_blank" class="btn">Read on GitBook</a>
+      </div>
+
+      <div class="card" data-platform="GitHub" data-difficulty="Medium" data-os="Windows">
+        <h3>💣 Buffer Overflow - VulnServer</h3>
+        <p>Coming soon...</p>
+        <p><strong>Platform:</strong> GitHub</p>
+        <p><strong>Difficulty:</strong> Medium</p>
+        <p><strong>OS:</strong> Windows</p>
+        <a href="#" target="_blank" class="btn">Read on GitHub</a>
+      </div>
+
+      <div class="card" data-platform="TryHackMe" data-difficulty="Hard" data-os="Web">
+        <h3>🔍 CVE-2024-XXXX Exploit Writeup</h3>
+        <p>Coming soon...</p>
+        <p><strong>Platform:</strong> TryHackMe</p>
+        <p><strong>Difficulty:</strong> Hard</p>
+        <p><strong>OS:</strong> Web</p>
+        <a href="#" target="_blank" class="btn">Read on GitHub</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &gt;_r3dsec ~ echo "Writeups uploaded successfully" · 2025
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

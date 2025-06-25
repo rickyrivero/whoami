@@ -1,0 +1,374 @@
+/* Global base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000000;
+  color: #00ff00;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  border-bottom: 1px solid #00ff00;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 8px #00ff00;
+}
+
+nav a {
+  margin-left: 1.2rem;
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #00ff00;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-shadow: none;
+}
+
+/* Main layout */
+main {
+  padding: 6rem 2rem 2rem;
+  flex: 1;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Title & description */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #00ff006b;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 0 0 2px #00ff00;
+}
+
+.text-align {
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+.section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #00ff00;
+  border-left: 3px solid #00ff00;
+  padding-left: 1rem;
+}
+
+.section p {
+  max-width: none;
+  line-height: 1.6;
+  text-shadow: 0 0 2px #00ff00;
+}
+
+.skills-list, .cert-list {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-list li,
+.cert-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.skills-list li::before,
+.cert-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+  font-weight: bold;
+  text-shadow: 0 0 3px #00ff00;
+}
+/*
+.main-margin {
+  margin-right: 15rem;
+  margin-left: 15rem;
+}
+*/
+
+.container {
+  margin-right: 15rem;
+  margin-left: 15rem;
+  text-align: justify;
+}
+
+.container2 {
+  text-align: justify;
+}
+
+.container3 {
+  /*
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 1rem;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  text-align: justify;
+  white-space: pre-wrap;
+  line-height: 1.6;*/
+
+  margin-right: 15rem;
+  margin-left: 15rem;
+  text-align: justify;
+  padding: 1rem;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 5px #00ff007d;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.btn:hover {
+  background-color: #00ff00;
+  color: #000000;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #00ff00;
+  background: #000000;
+  font-size: 0.9rem;
+  text-shadow: 0 0 4px #00ff00;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid #00ff00;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #0a0a0a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 6px rgba(0, 255, 0, 0.4);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #00ff00;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-shadow: 0 0 2px #00ff00;
+}
+
+/* Writeups Grid */
+.writeups-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.filters input,
+.filters select {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #00ff00;
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  outline: none;
+}
+
+.filters input::placeholder {
+  color: #00ff00;
+}
+
+.filters input:focus,
+.filters select:focus {
+  box-shadow: 0 0 5px #00ff00;
+}
+
+/* Contact */
+.terminal-block {
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 1rem;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  margin-top: 2rem;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.terminal-block a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terminal-block a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+/* Banner */
+.terminal-banner {
+  font-family: monospace;
+  color: #00ff00;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: -3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: glow 1.5s infinite alternate;
+}
+
+.cursor {
+  color: #00ff00;
+  animation: blink 1s step-end infinite;
+}
+
+/* Cursor blinking */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Optional glowing effect */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00ff00;
+  }
+  to {
+    text-shadow: 0 0 15px #00ff00;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+}
+
+/* Selection */
+::selection {
+  background-color: #00ff00;
+  color: #000000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
